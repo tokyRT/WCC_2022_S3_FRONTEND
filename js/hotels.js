@@ -41,7 +41,7 @@ const showInHtmlMatches = hotels.map((data) => {
                                 <iconify-icon icon="clarity:star-solid" style="color: #ffce31; margin-right: 5px" width="15" height="14"></iconify-icon>
                                 <p>4.5/5</p>
                             </div>
-                            <div class='flex'>
+                            <div class='flex location'>
                                 <iconify-icon icon="el:map-marker" style="color: black;" width="14" height="14"></iconify-icon>
                                 <p>Moab, UT</p>
                             </div>
