@@ -1,2 +1,10 @@
 $orange: #DD9855; 
 $darkGrey: #202020;
+
+@font-face {
+    font-family: "Okine";
+    src: url("../assets/font/MADEOkineSansPERSONALUSE-Medium.otf") format("otf");
+}
+body{
+    font-family: "Okine";
+}
