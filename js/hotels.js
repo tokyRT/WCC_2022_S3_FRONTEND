@@ -38,22 +38,22 @@ const showInHtmlMatches = hotels.map((data) => {
                         <h3>${data.name}</h3>
                         <div class='flex'>
                             <div class='flex rating'>
-                                <iconify-icon icon="clarity:star-solid" style="color: #ffce31;" width="17" height="16"></iconify-icon>
+                                <iconify-icon icon="clarity:star-solid" style="color: #ffce31; margin-right: 5px" width="15" height="14"></iconify-icon>
                                 <p>4.5/5</p>
                             </div>
                             <div class='flex'>
-                                <iconify-icon icon="el:map-marker" style="color: white;" width="14" height="14"></iconify-icon>
+                                <iconify-icon icon="el:map-marker" style="color: black;" width="14" height="14"></iconify-icon>
                                 <p>Moab, UT</p>
                             </div>
-                        </div>
+                        </div> 
                         <p class='price'>
                             ${data.price}<span>/right</span>
                         </p>
                     </div>
                 </div>
-                <div class='bg-orange'>
+                <a href="" class='bg-orange'>
                     <iconify-icon icon="bi:arrow-right" style="color: #F49338" width="20" height="20"></iconify-icon>
-                </div>
+                </a>
             </div>
         `
 }).join('')

@@ -22,6 +22,7 @@ const data = [
 
 const cardContainer = document.querySelector('.card-container');
 
+
 const showInHtml = data.map((data) => {
     return `
         <div class='card'>
@@ -31,7 +32,7 @@ const showInHtml = data.map((data) => {
             <p class='name'>
                 ${data.name}
             </p>
-            <div class='flex details'>
+            <div class='flex'>
                 <div class='flex rating'>
                     <iconify-icon icon="clarity:star-solid" style="color: #ffce31;" width="17" height="16"></iconify-icon>
                     <p>${data.rating}/5</p>
