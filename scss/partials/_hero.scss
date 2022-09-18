@@ -773,8 +773,7 @@
                             color: $darkGrey;
                             background-color: white;
                             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                            transition: all .2s;
-                            transition-delay: .4s;
+                            transition: background .1s 0s, transform .2s .4s;
                             span{
                                 display: inline;
                                 margin-left: 20px;
