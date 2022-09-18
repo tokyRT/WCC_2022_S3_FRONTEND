@@ -3,7 +3,18 @@ $darkGrey: #202020;
 
 @font-face {
     font-family: "Okine";
-    src: url("../assets/font/MADEOkineSansPERSONALUSE-Medium.otf") format("otf");
+    src: url("../assets/font/MADEOkineSansPERSONALUSE-Regular.otf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Okine";
+    src: url("../assets/font/MADEOkineSansPERSONALUSE-Light.otf");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Okine";
+    src: url("../assets/font/MADEOkineSansPERSONALUSE-Bold.otf");
+    font-weight: bold;
 }
 body{
     font-family: "Okine";

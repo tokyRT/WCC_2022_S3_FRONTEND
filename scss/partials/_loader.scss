@@ -9,7 +9,7 @@ body > .overlay{
     
     &>div:not(.logo){
         width: 20%;
-        background-color: $orange;
+        background-color: $darkGrey;
         height: 100%;
         color: black;
         display: flex;
@@ -48,14 +48,25 @@ body > .overlay{
             margin-top: -10px;
             animation: starSpinning 2s infinite;
         }
+        .location{
+            width: 500px;
+            margin-top: -30px;
+            animation: float .7s ease-in-out infinite alternate;
+        }
+        @keyframes float {
+            to{
+                transform: translateY(-40px);
+            }
+        }
         .text{
             animation: fadeIn .8s;
+            margin-top: -50px;
             svg.text{
                 overflow: visible;
-                @for $i from 1 to 7 {
+                @for $i from 1 to 14 {
                     path:nth-child(#{$i}){
                         animation: letterSlide .6s infinite alternate;
-                        animation-delay: #{$i/10}s;
+                        animation-delay: #{$i/15}s;
                     }
                 }
             }
@@ -80,7 +91,7 @@ body > .overlay{
 }
 @keyframes letterSlide {
     from{
-        transform: translateY(-20px);
+        transform: translateY(-10px);
         opacity: .3;
     }
 }

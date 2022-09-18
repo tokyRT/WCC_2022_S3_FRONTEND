@@ -20,19 +20,32 @@ const data = [
         rating: '4.5',
         image: '../assets/images/recommend3.jpg'
     },
+    {
+        id: 4,
+        price: '$160',
+        name: 'Spring Hill Suites',
+        rating: '4.5',
+        image: '../assets/images/recommend1.jpg'
+    },
+    {
+        id: 5,
+        price: '$160',
+        name: "Arne's Royal Hawailan ",
+        rating: '4.5',
+        image: '../assets/images/recommend2.jpg'
+    },
 ]
 
 
-const cardContainer = document.querySelector('.card-container');
+const swiperCardContainer = document.querySelector('.swiper .swiper-wrapper');
 
 
 const showInHtml = data.map((data) => {
     return `
-        <div class='card'>
-            <img src=${data.image} alt="recommend" />
+        <div class='card swiper-slide' style="background: url(${data.image})">
             <div class='content'>
             <p class='price'>
-                ${data.price}<span>/right</span>
+                ${data.price}<span>/night</span>
             </p>
             <p class='name'>
                 ${data.name}
@@ -54,4 +67,4 @@ const showInHtml = data.map((data) => {
     `
 }).join('')
 
-cardContainer.innerHTML = showInHtml
+swiperCardContainer.innerHTML = showInHtml

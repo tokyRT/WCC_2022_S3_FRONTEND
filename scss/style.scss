@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    overflow-x: hidden;
+}
 @import 'partials/variables';
 @import 'partials/nav';
 @import 'partials/loader';
